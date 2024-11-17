@@ -8,24 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/FontAwesome/css/all.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
     <title>Petshop - ở đây có thú cưng hơn thế nữa</title>
 </head>
 <body>
     <header class="Nav">
         <div class="logo"><a href="#"><p>Petshop</p></a></div>
         <div class="Nav-links">
-            <ul>
+            <ul class="menu">
                 <li><a class="Home" href="#">Trang chủ</a></li>
                 <li><a class="Intro" href="#">Giới thiệu</a></li>
                 <li><a class="Products" href="#">Sản phẩm</a></li>
                 <li><a class="Pet_kinds" href="#">Thú cưng các loại</a></li>
                 <li><a class="News" href="#">Tin tức</a></li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </div>
     </header>
     <nav class="container">
          <div class="slide">
-            <img src="https://wallpapers.com/images/featured/cat-g9rdx9uk2425fip2.jpg" height="500px" alt="">
+            <img src="https://wallpapers.com/images/featured/cat-g9rdx9uk2425fip2.jpg" alt="">
             <div class="text">
                 <div class="text_1">
                     <h1>Petshop</h1>
@@ -96,22 +98,22 @@
             <div class="products_list">
                 <div class="product_items">
                     <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
-                    <p>Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</p>
+                    <p class="info"><a href="#">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NuQJvsPBxXj2HHHs0cxODccW9k3xbmfnTg&s" alt="">
-                    <p>Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</p>
+                    <p class="info"><a href="#">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://luckypetshop.vn/wp-content/uploads/2020/02/vong-co-chuong-cho-meo-2-lop-1.png" alt="">
-                    <p>Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</p>
+                    <p class="info"><a href="#">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://fagopet.vn/uploads/images/624289159487f634f8442204/thuc-an-hat-cho-meo-catsrang.webp" alt="">
-                    <p>Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</p>
+                    <p class="info"><a href="#">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 
@@ -119,24 +121,26 @@
         </div>
         <div class="products_container">
             <div class="products_list">
-                <div class="product_items">
-                    <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
-                    <p>Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</p>
-                    <p class="price">Giá: 150.000</p>
-                </div>
+                <a href="">
+                    <div class="product_items">
+                        <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
+                        <p class="info"><a href="#">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a></p>
+                        <p class="price">Giá: 150.000</p>
+                    </div>
+                </a>
                 <div class="product_items">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NuQJvsPBxXj2HHHs0cxODccW9k3xbmfnTg&s" alt="">
-                    <p>Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</p>
+                    <p class="info"><a href="#">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://luckypetshop.vn/wp-content/uploads/2020/02/vong-co-chuong-cho-meo-2-lop-1.png" alt="">
-                    <p>Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</p>
+                    <p class="info"><a href="#">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://fagopet.vn/uploads/images/624289159487f634f8442204/thuc-an-hat-cho-meo-catsrang.webp" alt="">
-                    <p>Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</p>
+                    <p class="info"><a href="#">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 
