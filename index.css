@@ -142,11 +142,20 @@
     color: #000;
     text-align: justify;
 }
+.paragraph li {
+    font-family: 'League Spartan';
+    font-size: 22px;
+    line-height: 1.6;
+    padding-left: 40px;
+    color: #000;
+    text-align: justify;
+    list-style: none;
+}
 .subtitle {
     font-size: 36px;
     font-weight: bold;
     color: #eb8c8c;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .image {
     float: right;
@@ -298,7 +307,6 @@
     justify-content: center;
 }
 .subject {
-    
     display: flex;
     width: 600px;
     height: 60px;
@@ -326,19 +334,27 @@
 }
 .banner_1 {
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 .banner_2 {
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 .banner_1 img{
     width: 600px;
     height: 190px;
     border-radius: 20px;
 }
+.banner_1:hover {
+    transform: scale(1.05);;
+}
 .banner_2 img{
     width: 600px;
     height: 190px;
     border-radius: 20px;
+}
+.banner_2:hover {
+    transform: scale(1.05);;
 }
 .products_container {
     display: flex;
@@ -366,6 +382,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .product_items img {
@@ -373,6 +390,10 @@
     height: auto; 
     margin-bottom: px;
     border-radius: 5px;
+}
+.product_items:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .products_list p {
@@ -392,7 +413,28 @@
     text-decoration: underline;
 }
 .price {
-    padding-top: 20px;
+    color: #ff5722;
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .product_items {
+        flex: 1 1 calc(50% - 20px);
+    }
+    .subject h2 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .product_items {
+        flex: 1 1 100%;
+    }
+    .subject h2 {
+        font-size: 1.2rem;
+    }
+    .banner img {
+        height: auto;
+    }
 }
 
     /* News */
