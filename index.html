@@ -6,6 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/FontAwesome/css/all.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index.js">
@@ -19,11 +22,21 @@
                 <li><a class="Home" href="#">Trang chủ</a></li>
                 <li><a class="Intro" href="#">Giới thiệu</a></li>
                 <li><a class="Products" href="#">Sản phẩm</a></li>
-                <li><a class="Pet_kinds" href="#">Thú cưng các loại</a></li>
+                <li><a class="Pet_kinds" href="#">Thú cưng</a></li>
                 <li><a class="News" href="#">Tin tức</a></li>
             </ul>
+                
+
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </div>
+        <div class="search-container">
+            
+            <input type="text" class="search-box" id="search-box" >
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+    
+            <i class="fa-solid fa-user"></i>
+        
     </header>
     <nav class="container">
          <div class="slide">
@@ -106,7 +119,7 @@
                 <div class="product_items">
                     <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
                     <p class="info"><a href="#">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a></p>
-                    <p class="price">Giá: 150.000</p>
+                    <p class="price" style="margin-top: 40px;">Giá: 150.000</p>
                 </div>
                 <div class="product_items">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NuQJvsPBxXj2HHHs0cxODccW9k3xbmfnTg&s" alt="">
@@ -127,31 +140,33 @@
             </div>
             
         </div>
+
+
         <div class="subject">
-            <h2>Thú cưng các loại</h2>
+            <h2>Shop thú cưng </h2>
         </div>
-        <div class="products_container">
+        <div class="pets_container">
             <div class="products_list">
                 
-                    <div class="product_items">
-                        <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
-                        <p class="info"><a href="#">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a></p>
+                    <div class="pets_items">
+                        <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/anh-meo-Munchkin-den-trang-dang-yeu.jpg" alt="">
+                        <p class="info"><a href="#">Mèo Anh lông ngắn Munchkin</a></p>
                         <p class="price">Giá: 150.000</p>
                     </div>
                 
-                <div class="product_items">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NuQJvsPBxXj2HHHs0cxODccW9k3xbmfnTg&s" alt="">
-                    <p class="info"><a href="#">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a></p>
+                <div class="pets_items">
+                    <img src="https://chocanhdanang.com/wp-content/uploads/2024/03/cho-golden-retriever-mau-vang-2-thang-tuoi-5-1-400x400-2.jpg" alt="">
+                    <p class="info"><a href="#">Golden nâu xinh ú nụ</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
-                <div class="product_items">
-                    <img src="https://luckypetshop.vn/wp-content/uploads/2020/02/vong-co-chuong-cho-meo-2-lop-1.png" alt="">
-                    <p class="info"><a href="#">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a></p>
+                <div class="pets_items">
+                    <img src="https://azpet.com.vn/wp-content/uploads/2021/06/C12106-1-1.jpg" alt="">
+                    <p class="info"><a href="#">Husky đen trắng thuần chủng</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
-                <div class="product_items">
-                    <img src="https://fagopet.vn/uploads/images/624289159487f634f8442204/thuc-an-hat-cho-meo-catsrang.webp" alt="">
-                    <p class="info"><a href="#">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a></p>
+                <div class="pets_items">
+                    <img src="https://azpet.com.vn/wp-content/uploads/2022/07/M770-M12481-1.jpg" alt="">
+                    <p class="info"><a href="#">Mèo Anh lông xám dài thuần chủng</a></p>
                     <p class="price">Giá: 150.000</p>
                 </div>
                 
@@ -164,10 +179,34 @@
 
     </div>
 
-    <footer class="footer_container">
-        <div class="info-text">
-            <p>PetShop là cổng thông tin khổng lồ và hoàn toàn miễn phí về các vấn đề xung quanh thú cưng</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="about">
+                <h3>Về chúng tôi</h3>
+                <p>
+                  <i>PetShop</i> là cổng thông tin khổng lồ và hoàn toàn miễn phí về
+                  các vấn đề xung quanh thú cưng
+                </p>
+              </div>
+            <div class="links">
+                <h3>Danh sách trang</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Liên hệ</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/manhlinh.tran.710" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/manhlinh.tran.710/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
