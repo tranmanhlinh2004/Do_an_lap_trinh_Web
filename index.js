@@ -16,6 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
 document.getElementById('search-icon').addEventListener('click', function () {
   const searchBox = document.getElementById('search-box');
   searchBox.classList.toggle('active'); 
