@@ -26,3 +26,13 @@ document.getElementById('search-icon').addEventListener('click', function () {
 });
 
 
+function scrollProducts(direction) {
+  const productList = document.querySelector('.products_list');
+  const scrollAmount = 300; // Số pixel cuộn mỗi lần
+  
+  if (direction === 'left') {
+      productList.scrollLeft -= scrollAmount; // Cuộn sang trái
+  } else if (direction === 'right') {
+      productList.scrollLeft += scrollAmount; // Cuộn sang phải
+  }
+}

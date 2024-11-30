@@ -379,8 +379,8 @@
 
 
 .product_items {
-    flex: 0 0 23%; /* Chiếm 23% chiều rộng, vừa đủ để hiển thị 4 sản phẩm */
-    text-align: center;
+    flex: 0 0 23%;
+    text-align: justify;
     background: #f9f9f9;
     padding: 10px;
     border-radius: 8px;
@@ -402,7 +402,7 @@
 
 .product_items .info a {
     font-family: 'League Spartan';
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #272727;
     text-decoration: none;
@@ -441,11 +441,11 @@
 }
 
 .scroll-btn.left {
-    left: -20px; /* Nút trái */
+    left: -20px;
 }
 
 .scroll-btn.right {
-    right: 20px; /* Nút phải */
+    right: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -458,45 +458,18 @@
     .products_list {
         grid-template-columns: repeat(2, 1fr); 
     }
-
-    .banner {
-        flex-direction: column; 
-    }
 }
 
 @media (max-width: 480px) {
     .products_list {
         grid-template-columns: 1fr; 
     }
-
     .subject h2 {
         font-size: 1.4em;
     }
 }
 
 
-
-@media (max-width: 1024px) {
-    .pets_list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .pets_list {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 480px) {
-    .pets_list {
-        grid-template-columns: 1fr; 
-    }
-
-    .subject h2 {
-        font-size: 1.4em;
-    }
-}
 
 
 .News {
