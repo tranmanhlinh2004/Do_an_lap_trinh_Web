@@ -24,3 +24,5 @@ document.getElementById('search-icon').addEventListener('click', function () {
       searchBox.focus();
   }
 });
+
+

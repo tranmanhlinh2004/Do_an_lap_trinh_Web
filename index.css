@@ -128,12 +128,7 @@
       display: block;
     }
   }
-  .Nav i {
-    margin-right: 30px;
-    color: white;
-    font-size: 24px;
-    opacity: 0.7;
-}
+
 .slide {
     position: relative;
     display: inline-block;
@@ -351,6 +346,14 @@
 
     
 }
+
+.products_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
 .products {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -365,54 +368,23 @@
     color: #bf5a84;
 }
 
-.banner {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.banner_1 {
-    transition: transform 0.3s ease;
-}
-.banner_2 {
-    transition: transform 0.3s ease;
-}
-.banner img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.banner_1:hover {
-    transform: translateY(-5px);
-}
-
-.banner_2:hover {
-    transform: translateY(-5px);
-}
-.banner:hover > :not(:hover) {
-    opacity: 0.5;
-}
-
-.products_container {
-    display: flex;
-    justify-content: center;
-}
-
 .products_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     gap: 20px;
+    padding: 10px auto;
+    width: 100%;
 }
+
 
 .product_items {
-    text-align: justify;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    flex: 0 0 23%; /* Chiếm 23% chiều rộng, vừa đủ để hiển thị 4 sản phẩm */
+    text-align: center;
+    background: #f9f9f9;
     padding: 10px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .product_items:hover {
@@ -436,9 +408,7 @@
     text-decoration: none;
 }
 
-.product_items .info a:hover {
-    color: #c18964;
-}
+
 
 .product_items .price {
     text-align: left;
@@ -446,6 +416,36 @@
     font-size: 1.2em;
     color: #ff6600;
     font-weight: bold;
+}
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-btn:hover {
+    opacity: 1;
+}
+
+.scroll-btn.left {
+    left: -20px; /* Nút trái */
+}
+
+.scroll-btn.right {
+    right: 20px; /* Nút phải */
 }
 
 @media (max-width: 1024px) {
@@ -474,60 +474,6 @@
     }
 }
 
-
-.pets_container {
-    display: flex;
-    justify-content: center;
-}
-
-.pets_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px;
-}
-
-.pets_items {
-    text-align: justify;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.pets_items:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.pets_items img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.pets_items .info a {
-    font-family: 'Coiny';
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-}
-
-.pets_items .info a:hover {
-    color: #c18964;
-}
-
-.pets_items .price {
-    text-align: left;
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #ff6600;
-    font-weight: bold;
-}
 
 
 @media (max-width: 1024px) {
@@ -614,21 +560,19 @@
 }
 
 .social-icon {
+    text-decoration: none;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #444;
-    border-radius: 50%;
     color: #fff;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 20px;
+    transition: 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: #007bff;
-    color: #fff;
+    font-size: 30px;
 }
 
 @media (max-width: 768px) {
