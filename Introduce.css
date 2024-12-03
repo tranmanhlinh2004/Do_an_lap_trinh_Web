@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+.Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #000;
+    padding: 20px 50px;
+    opacity: 0.8;
+}
+
+
+
+.logo a {
+    text-decoration: none;
+    font-family: 'Coiny';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin: 0px auto;
+    color: #fff;
+    
+}
+.Nav-links {
+    flex-grow: 1;
+}
+
+.Nav-links ul {
+    padding: 0px 50px;
+    list-style: none;
+    display: flex;
+}
+.Nav-links li {
+    margin-left: 30px;
+    line-height: 2;
+}
+.Nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.Nav-links .Intro {
+    color: #23FCFF;
+}
+
+.Nav-links a:hover {
+    color: #23FCFF;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding-right: 10px;
+    color: white;
+}
+.search-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#search-icon {
+    font-size: 24px;
+    color: #d1d1d1;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: color 0.3s;
+    position: relative;
+    z-index: 1; 
+}
+
+#search-icon:hover {
+    color: #ffffff;
+}
+
+.search-box {
+    width: 0px;
+    opacity: 0;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    position: absolute;
+    left: 30px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    background-color: white;
+    
+}
+
+.search-box.active {
+    width: 300px;
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .Nav-links .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+
+    .Nav-links .menu.active {
+      display: flex;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
