@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-}
-    
+} 
 .Nav {
     position: fixed;
     top: 0;
@@ -24,8 +23,6 @@
     padding: 20px 50px;
     opacity: 0.8;
 }
-
-
 .logo a {
     text-decoration: none;
     font-family: 'Coiny';
@@ -33,13 +30,11 @@
     font-weight: bold;
     margin-left: 60px;
     margin: 0px auto;
-    color: #fff;
-    
+    color: #fff;  
 }
 .Nav-links {
     flex-grow: 1;
 }
-
 .Nav-links ul {
     padding: 0px 50px;
     list-style: none;
@@ -75,7 +70,6 @@
     display: flex;
     align-items: center;
 }
-
 #search-icon {
     font-size: 24px;
     color: #d1d1d1;
@@ -85,11 +79,9 @@
     position: relative;
     z-index: 1; 
 }
-
 #search-icon:hover {
     color: #ffffff;
 }
-
 .search-box {
     width: 0px;
     opacity: 0;
@@ -100,10 +92,8 @@
     position: absolute;
     left: 30px;
     transition: width 0.3s ease, opacity 0.3s ease;
-    background-color: white;
-    
+    background-color: white; 
 }
-
 .search-box.active {
     width: 300px;
     opacity: 1;
@@ -118,11 +108,9 @@
       top: 50px;
       left: 0;
     }
-
     .Nav-links .menu.active {
       display: flex;
     }
-
     .menu-icon {
       display: block;
     }
