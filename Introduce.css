@@ -128,3 +128,254 @@
       display: block;
     }
   }
+
+  .banner{
+    background: url("https://i.pinimg.com/736x/6c/bb/6d/6cbb6dc53804687b1a1e52fd57ca04c8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+
+}
+.text {
+    text-align: center;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #fff;
+}
+.text1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bold;
+}
+.text1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+  
+  /* Main Container */
+.body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; /* Hai cột */
+    gap: 20px;
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Text Section */
+.text3 {
+    line-height: 1.6;
+    color: #333;
+}
+  
+.text3 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+  
+.text3 p {
+    margin-bottom: 16px;
+    font-size: 28px;
+    text-align: justify;
+}
+.gallery-container{
+    background-color: #999;
+    border-radius: 30px;
+}
+  /* Image */
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Hai cột cho hình ảnh */
+    gap: 10px;
+}
+  
+.image img {
+    filter: brightness(0.7); /* Giảm độ sáng (làm tối ảnh) */
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+  
+.image img:hover {
+    filter: brightness(1.0); /* Tăng độ sáng */ 
+    transform: scale(1.1); /* Phóng to ảnh */
+}  
+
+.section {
+    max-width: 100%;
+    max-height: 600px;
+    text-align: center;
+    padding: 20px;
+    background: #F9F9F9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+.heard h1 {
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.heard p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+  
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+  
+.service {
+    text-align: center;
+  }
+  
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border: none;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+button:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+/* styles.css */
+
+.quote-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('https://caodangytetphcm.edu.vn/wp-content/uploads/2022/04/top-phong-kham-thu-y-q7.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0.7);
+}
+  
+.quote-text {
+    filter: brightness(1.0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+.quote-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+    font-weight: 500;
+}
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about p{
+    margin-top: 20px;
+    font-style: 'League Spartan';
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 300px;
+    color: #acabab;
+}
+
+.links h3, .contact h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+    
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links ul li a:hover {
+    color: #23FCFF;
+}
+
+.contact .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about, .links, .contact {
+        margin-bottom: 20px;
+    }
+}
+  
