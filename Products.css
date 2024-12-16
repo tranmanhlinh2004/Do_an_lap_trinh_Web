@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 } 
 .Nav {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -15,6 +16,7 @@
     z-index: 1000;
 }
 .Nav {
+    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,3 +117,32 @@
       display: block;
     }
   }
+.slide-intro{
+    cursor: pointer;
+    margin-top: 80px;
+    width: 100%;
+    height: 750px;
+    animation: slider 10s ease infinite;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+@keyframes slider{
+    0%, 30% {
+        background-image: url(https://theme.hstatic.net/1000238938/1000576591/14/banner_collection.jpg?v=386);
+       
+}
+    30%, 60% {
+        background-image: url(https://nupet.vn/wp-content/uploads/2023/01/slider-nupet-new-3.jpg);
+        
+    }
+    60%, 90% {
+        background-image: url(https://bizweb.dktcdn.net/100/432/370/files/1-fd4013b4-3b55-4f8b-9317-65be7e4eb09e.png?v=1627704655750);
+        
+    }
+    90%, 100% {
+        background-image: url(https://qltt.vn/stores/news_dataimages/hanhnth3/032024/30/10/0606_maxresdefault-1.jpg?rt=20240330100607);
+        
+    }
+
+}

@@ -229,7 +229,7 @@
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .paragraph {
@@ -237,6 +237,10 @@
     }
     .paragraph li {
         font-size: 0.9rem;
+    }
+    .image img {
+        width: 600px;
+        height: 550px;
     }
 }
 
@@ -466,8 +470,35 @@
     height:400px;
 
 }
+news-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.news-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.news-intro p{
+    color: #8a2121;
+}
+.news-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.news-link a{
+    color:#0D5FF6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .footer {
-    background-color: #111;
+    background-color: #252323;
     color: #fff;
     padding: 20px 0;
 }
@@ -490,9 +521,8 @@
     color: #acabab;
 }
 
-.links h3, .contact h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
+.links h2, .contact h2 {
+    margin-bottom: 20px;
 }
 
 .links ul {
@@ -507,13 +537,14 @@
 }
 
 .links ul li a {
-    color: #fff;
+    color: #b1aeae;
     text-decoration: none;
     font-size: 16px;
 }
 
 .links ul li a:hover {
-    color: #23FCFF;
+    
+    text-decoration: underline;
 }
 
 .contact .social-icons {
@@ -528,7 +559,7 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    color: #fff;
+    color: #979797;
     font-size: 20px;
     transition: 0.3s ease;
 }
