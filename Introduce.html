@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Coiny&display=swap" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -25,17 +25,31 @@
         color: #23fcff !important;
       }
 
-      .banner {
-        background: url("https://i.pinimg.com/736x/6c/bb/6d/6cbb6dc53804687b1a1e52fd57ca04c8.jpg")
-          center/cover no-repeat;
+        .carousel-item img {
         height: 900px;
-        position: relative;
-      }
+        object-fit: cover;
+        }
 
-      .banner-text {
+        .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+        .banner-text {
         text-transform: uppercase;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .carousel-caption p {
+        font-size: 1.25rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
 
       .gallery-img {
         transition: transform 0.3s ease;
@@ -65,93 +79,11 @@
       }
 
       .social-icon:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
       }
-      .footer {
-    background-color: #252323;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.about p{
-    margin-top: 20px;
-    font-style: 'League Spartan';
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 300px;
-    color: #acabab;
-}
-
-.links h2, .contact h2 {
-    margin-bottom: 20px;
-}
-
-.links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links ul li {
-    margin-bottom: 10px;
-    
-}
-
-.links ul li a {
-    color: #b1aeae;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.links ul li a:hover {
-    
-    text-decoration: underline;
-}
-
-.contact .social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icon {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #979797;
-    font-size: 20px;
-    transition: 0.3s ease;
-}
-
-.social-icon:hover {
-    font-size: 30px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about, .links, .contact {
-        margin-bottom: 20px;
-    }
-}
     </style>
   </head>
-  <body>
+  
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
@@ -196,19 +128,53 @@
       </div>
     </nav>
 
-    <!-- Banner -->
-    <div class="banner d-flex align-items-center">
-      <div class="container text-center text-white">
-        <div class="banner-text">
-          <h1 class="display-1 fw-bold mb-4">PET SHOP</h1>
-          <p class="h3">Ở ĐÂY CÓ THÚ CƯNG VÀ NHIỀU HƠN THẾ NỮA</p>
+   <!-- Banner -->
+<div id="petShopCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img
+          src="https://i.pinimg.com/736x/6c/bb/6d/6cbb6dc53804687b1a1e52fd57ca04c8.jpg"
+          class="d-block w-100"
+          alt="Banner 1"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <h1 class="banner-text">PET SHOP</h1>
+          <p>Ở đây có thú cưng và nhiều hơn thế nữa</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img
+          src="https://i.pinimg.com/736x/6b/b3/b1/6bb3b1a0aee88f825952202d5e8da373.jpg"
+          class="d-block w-100"
+          alt="Banner 2"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <h1 class="banner-text">THÚ CƯNG ĐA DẠNG</h1>
+          <p>Hãy khám phá những điều thú vị tại cửa hàng chúng tôi</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img
+          src="https://i.pinimg.com/736x/a4/ee/f5/a4eef566a58d2745c72d97e5c35e022d.jpg"
+          class="d-block w-100"
+          alt="Banner 3"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <h1 class="banner-text">PHỤ KIỆN THÚ CƯNG</h1>
+          <p>Đầy đủ phụ kiện dành cho người bạn nhỏ của bạn</p>
         </div>
       </div>
     </div>
+  </div>
+  
 
     <!-- Main Content -->
     <div class="container my-5">
-      <div class="row">
+      <div class="row gy-5">
+        <!-- Introduction Section -->
         <div class="col-lg-6">
           <h1 class="mb-4">
             Pet Shop - Nơi chăm sóc thú cưng bằng cả trái tim!
@@ -231,6 +197,8 @@
             nhất.
           </p>
         </div>
+
+        <!-- Gallery Section -->
         <div class="col-lg-6">
           <div class="bg-secondary p-4 rounded">
             <div class="row g-4">
@@ -261,6 +229,72 @@
                   class="img-fluid rounded gallery-img"
                   alt="Mèo đáng yêu"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission and Vision Section -->
+        <div class="col-12">
+          <div class="row g-4">
+            <!-- Mission Section -->
+            <div class="col-lg-6">
+              <div class="card border-0 bg-light h-100">
+                <div class="card-body p-4">
+                  <h2 class="card-title mb-4 text-primary">
+                    Sứ mệnh của chúng tôi
+                  </h2>
+                  <div class="card-text fs-5 lh-lg">
+                    <p>
+                      Sứ mệnh của Pet Shop là cung cấp những sản phẩm và dịch vụ
+                      chăm sóc thú cưng chất lượng cao, an toàn và hiệu quả,
+                      giúp bảo vệ sức khỏe và mang lại cuộc sống vui vẻ, hạnh
+                      phúc cho các thú cưng.
+                    </p>
+                    <p>
+                      Chúng tôi cam kết không chỉ cung cấp các sản phẩm dinh
+                      dưỡng và phụ kiện cho thú cưng mà còn đồng hành cùng chủ
+                      nuôi trong việc chăm sóc, huấn luyện và cải thiện chất
+                      lượng cuộc sống của thú cưng, thông qua đội ngũ nhân viên
+                      giàu kinh nghiệm và yêu thương động vật.
+                    </p>
+                    <p class="mb-0">
+                      Chúng tôi luôn đặt lợi ích và sự hài lòng của khách hàng
+                      lên hàng đầu, nhằm tạo ra một môi trường thân thiện và
+                      đáng tin cậy cho tất cả những ai yêu thương thú cưng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision Section -->
+            <div class="col-lg-6">
+              <div class="card border-0 bg-light h-100">
+                <div class="card-body p-4">
+                  <h2 class="card-title mb-4 text-success">
+                    Tầm nhìn của chúng tôi
+                  </h2>
+                  <div class="card-text fs-5 lh-lg">
+                    <p>
+                      Tầm nhìn của Pet Shop là trở thành thương hiệu hàng đầu
+                      trong lĩnh vực cung cấp sản phẩm và dịch vụ chăm sóc thú
+                      cưng tại Việt Nam, được đông đảo khách hàng tin tưởng và
+                      lựa chọn.
+                    </p>
+                    <p>
+                      Chúng tôi hướng đến việc xây dựng một cộng đồng yêu thương
+                      động vật, nơi mọi thú cưng đều nhận được sự chăm sóc tốt
+                      nhất và mọi chủ nuôi đều được hỗ trợ tận tình trong hành
+                      trình chăm sóc thú cưng của mình.
+                    </p>
+                    <p class="mb-0">
+                      Pet Shop không ngừng đổi mới, sáng tạo và phát triển, nhằm
+                      đáp ứng nhu cầu ngày càng cao của khách hàng và mang đến
+                      những trải nghiệm tuyệt vời cho cả chủ nuôi và thú cưng.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -333,34 +367,62 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-          <div class="about">
-              <h3>Về chúng tôi</h3>
-              <p>
-                <i>PetShop</i> là cổng thông tin khổng lồ và hoàn toàn miễn phí về
-                các vấn đề xung quanh thú cưng
-              </p>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3>Về chúng tôi</h3>
+            <p class="text-secondary mt-3">
+              <i>PetShop</i> là cổng thông tin khổng lồ và hoàn toàn miễn phí về
+              các vấn đề xung quanh thú cưng
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Danh sách trang</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Liên hệ</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Chính sách bảo mật</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Điều khoản</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Liên hệ</h3>
+            <div class="mt-3">
+              <a
+                href="https://www.facebook.com/manhlinh.tran.710"
+                class="text-white me-3 social-icon"
+              >
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/manhlinh.tran.710/"
+                class="text-white me-3 social-icon"
+              >
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              <a href="#" class="text-white social-icon">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
             </div>
-          <div class="links">
-              <h3>Danh sách trang</h3>
-              <ul>
-                  <li><a href="#">Giới thiệu</a></li>
-                  <li><a href="#">Liên hệ</a></li>
-                  <li><a href="#">Chính sách bảo mật</a></li>
-                  <li><a href="#">Điều khoản</a></li>
-              </ul>
           </div>
-          <div class="contact">
-              <h3>Liên hệ</h3>
-              <div class="social-icons">
-                  <a href="https://www.facebook.com/manhlinh.tran.710" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/manhlinh.tran.710/" class="social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </div>
-          </div>
+        </div>
       </div>
-  </footer>
+    </footer>
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
