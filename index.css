@@ -48,6 +48,7 @@ body {
     line-height: 2;
 }
 .Nav-links a {
+    font-family: 'League Spartan';
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -364,7 +365,6 @@ body {
 
 .products_list {
     display: flex;
-    overflow-x: auto;
     scroll-behavior: smooth;
     gap: 20px;
     padding: 10px auto;
@@ -373,7 +373,8 @@ body {
 
 
 .product_items {
-    flex: 0 0 23%;
+    flex: 0 0 auto;
+    width: calc(100% / 4 - 20px);
     text-align: justify;
     background: #f9f9f9;
     padding: 10px;
@@ -451,6 +452,9 @@ body {
 @media (max-width: 768px) {
     .products_list {
         grid-template-columns: repeat(2, 1fr); 
+    }
+    .product_items {
+        width: calc(100% / 2 - 20px);
     }
 }
 

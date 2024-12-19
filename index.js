@@ -24,12 +24,4 @@ document.getElementById('search-icon').addEventListener('click', function () {
   }
 });
 
-function scrollProducts(direction) {
-  const productList = document.querySelector('.products_list');
-  const scrollAmount = 300;
-  if (direction === 'left') {
-      productList.scrollLeft -= scrollAmount;
-  } else if (direction === 'right') {
-      productList.scrollLeft += scrollAmount;
-  }
-}
+
