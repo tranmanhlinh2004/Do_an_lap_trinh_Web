@@ -56,7 +56,7 @@
     font-weight: bold;
     color: #fff;
 }
-.Nav-links .Home {
+.Nav-links .News {
     color: #23FCFF;
 }
 
@@ -128,3 +128,119 @@
       display: block;
     }
   }
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.News {
+    padding: 20px;
+}
+
+.news-title h1 {
+    text-align: center;
+}
+
+.news-intro, .news-link {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-item {
+    flex: 1 1 calc(33.333% - 40px); /* Đảm bảo 3 ô trong một hàng với khoảng cách 20px */
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 400px; /* Giới hạn chiều rộng tối đa */
+    max-height: 29%;
+    margin-top: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Đáp ứng thiết bị di động */
+@media (max-width: 1024px) {
+    .news-item {
+        flex: 1 1 calc(50% - 40px); /* 2 ô trong một hàng */
+    }
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex: 1 1 calc(100% - 40px); /* 1 ô trong một hàng */
+    }
+}
+
+.category-card {
+    border: 1px dashed #000;
+    text-align: center;
+    padding-left: 30px;
+    border-radius: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.category-card a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.category-card a:hover {
+    text-decoration: underline;
+}
