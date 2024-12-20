@@ -91,43 +91,7 @@
     color: #ffffff;
 }
 
-.search-box {
-    width: 0px;
-    opacity: 0;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    position: absolute;
-    left: 30px;
-    transition: width 0.3s ease, opacity 0.3s ease;
-    background-color: white;
-    
-}
 
-.search-box.active {
-    width: 300px;
-    opacity: 1;
-}
-@media (max-width: 768px) {
-    .Nav-links .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #333;
-      position: absolute;
-      top: 50px;
-      left: 0;
-    }
-
-    .Nav-links .menu.active {
-      display: flex;
-    }
-
-    .menu-icon {
-      display: block;
-    }
-  }
   * {
     box-sizing: border-box;
   }
@@ -165,16 +129,15 @@
     display: table;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-}
+
 
 .News {
-    padding: 20px;
+    padding: 30px;
 }
 
 .news-title h1 {
     text-align: center;
+    
 }
 
 .news-intro, .news-link {
@@ -190,7 +153,6 @@
 }
 
 .news-item {
-    flex: 1 1 calc(33.333% - 40px); /* Đảm bảo 3 ô trong một hàng với khoảng cách 20px */
     border: 1px solid #000;
     padding: 10px;
     box-sizing: border-box;
@@ -215,32 +177,4 @@
     .news-item {
         flex: 1 1 calc(100% - 40px); /* 1 ô trong một hàng */
     }
-}
-
-.category-card {
-    border: 1px dashed #000;
-    text-align: center;
-    padding-left: 30px;
-    border-radius: 1px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.category-card img {
-    max-width: 80px;
-    margin-bottom: 10px;
-}
-
-.category-card a {
-    color: #003366;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.category-card a:hover {
-    text-decoration: underline;
 }
