@@ -1,48 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Style/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Coiny&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/FontAwesome/css/all.css" />
-    <link rel="stylesheet" href="Shopping.css" />
-    <link rel="stylesheet" href="index.js" />
-    <title>Trang thông tin mua sắm dành cho thú cưng lớn nhất Việt Nam</title>
-  </head>
-  <body>
-    <header class="Nav">
-      <div class="logo">
-        <a href="index.html"><p>Petshop</p></a>
-      </div>
-      <div class="Nav-links">
-        <ul class="menu">
-          <li><a class="Home" href="index.html">Trang chủ</a></li>
-          <li><a class="Intro" href="Introduce.html">Giới thiệu</a></li>
-          <li><a class="Products" href="">Mua sắm</a></li>
-          <li><a class="Pet_kinds" href="Pets.html">Thú cưng</a></li>
-          <li><a class="News" href="News.html">Tin tức</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FontAwesome/css/all.css">
+    <link rel="stylesheet" href="Shopping.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Trang mua sắm dành cho thú cưng</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Petshop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Introduce.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="shoppingDropdown"
+              role="button"
+              aria-expanded="false"
+            >
+              Mua sắm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Thức ăn & Dinh dưỡng</a></li>
+              <li><a class="dropdown-item" href="#">Phụ kiện & Đồ chơi</a></li>
+              <li><a class="dropdown-item" href="#">Vệ sinh & Chăm sóc</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="Pets.html"
+              id="petsDropdown"
+              role="button"
+              aria-expanded="false"
+            >
+              Thú cưng
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Chó</a></li>
+              <li><a class="dropdown-item" href="#">Mèo</a></li>
+              <li><a class="dropdown-item" href="#">Các loài thú nhỏ</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="News.html">Tin tức</a>
+          </li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
       </div>
-      <div class="search-container">
-        <input type="text" class="search-box" id="search-box" />
-        <i class="fas fa-search" id="search-icon"></i>
-      </div>
-    </header>
+    </div>
+  </nav>
+  
+  
+
     <div class="slide-intro"></div>
 
+    
+    <div class="container-fluid py-4">
+        <div class="row">
+          <aside class="col-md-3">
+            <div class="sidebar p-3 bg-light">
+                <h5 class="mb-3">Sản phẩm dành cho thú cưng</h5>
+                <div class="accordion" id="petProductsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFood">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFood" aria-expanded="true" aria-controls="collapseFood">
+                                Thức ăn & Dinh dưỡng
+                            </button>
+                        </h2>
+                        <div id="collapseFood" class="accordion-collapse collapse show" aria-labelledby="headingFood" data-bs-parent="#petProductsAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Thức ăn hạt</li>
+                                    <li class="list-group-item">Pate</li>
+                                    <li class="list-group-item">Súp thưởng & đồ ăn nhẹ</li>
+                                    <li class="list-group-item">Thức ăn ướt dinh dưỡng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAccessories">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccessories" aria-expanded="false" aria-controls="collapseAccessories">
+                                Phụ kiện & đồ chơi
+                            </button>
+                        </h2>
+                        <div id="collapseAccessories" class="accordion-collapse collapse" aria-labelledby="headingAccessories" data-bs-parent="#petProductsAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Balo du lịch</li>
+                                    <li class="list-group-item">Vòng cổ & dây dắt</li>
+                                    <li class="list-group-item">Đồ chơi & huấn luyện</li>
+                                    <li class="list-group-item">Nhà chuồng & nệm</li>
+                                    <li class="list-group-item">Khay ăn cơm & vệ sinh hằng ngày</li>
+                                    <li class="list-group-item">Chải lông & cắt móng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCare">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCare" aria-expanded="false" aria-controls="collapseCare">
+                                Vệ sinh & chăm sóc
+                            </button>
+                        </h2>
+                        <div id="collapseCare" class="accordion-collapse collapse" aria-labelledby="headingCare" data-bs-parent="#petProductsAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Sữa tắm & dầu xả</li>
+                                    <li class="list-group-item">Xịt khử khuẩn, khử mùi</li>
+                                    <li class="list-group-item">Thuốc trị ve, rận & tẩy giun</li>
+                                    <li class="list-group-item">Dinh dưỡng bổ sung</li>
+                                    <li class="list-group-item">Men tiêu hóa & xịt ngoài da</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+      
+          <main class="col-md-9">
+            <h3 class="text-center mb-4">Sản phẩm dành cho thú cưng</h3>
+            <input type="text" class="form-control mb-4" placeholder="Tìm kiếm...">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+              </div><div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nhỏ</h6>
+                    <p class="card-text">2,000,000đ</p>
+                  </div>
+                </div>
+          
+            <nav aria-label="Page navigation example" class="num-list">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+              </ul>
+            </nav>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="about">
+                <h3>Về chúng tôi</h3>
+                <p>
+                  <i>PetShop</i> là cổng thông tin khổng lồ và hoàn toàn miễn phí về
+                  các vấn đề xung quanh thú cưng
+                </p>
+              </div>
+            <div class="links">
+                <h3>Danh sách trang</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Liên hệ</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/manhlinh.tran.710" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/manhlinh.tran.710/" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="index.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

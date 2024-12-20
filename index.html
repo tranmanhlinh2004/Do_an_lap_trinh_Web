@@ -4,56 +4,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/FontAwesome/css/all.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Petshop - ở đây có thú cưng hơn thế nữa</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Petshop</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Trang chủ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Introduce.html">Giới thiệu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Shopping.html">Mua sắm</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Pets.html">Thú cưng</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="News.html">Tin tức</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-light" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Petshop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Introduce.html">Giới thiệu</a>
+              </li>
+      
+              <!-- Menu Mua sắm -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Shopping.html"
+                  id="shoppingDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Mua sắm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Thức ăn & Dinh dưỡng</a></li>
+                  <li><a class="dropdown-item" href="#">Phụ kiện & Đồ chơi</a></li>
+                  <li><a class="dropdown-item" href="#">Vệ sinh & Chăm sóc</a></li>
+                </ul>
+              </li>
+      
+              <!-- Menu Thú cưng -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Pets.html"
+                  id="petsDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Thú cưng
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chó</a></li>
+                  <li><a class="dropdown-item" href="#">Mèo</a></li>
+                  <li><a class="dropdown-item" href="#">Các loài thú nhỏ</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="News.html">Tin tức</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <nav class="container">
          <div class="slide">
             <img src="https://wallpapers.com/images/featured/cat-g9rdx9uk2425fip2.jpg" alt="">
@@ -93,25 +123,27 @@
          </section>
     </nav>
     <div class="commitment_body">
-        <div class="commitment-section">
-            <h1>Cam kết</h1>
-            <p>Petshop.com được định hình là trang web thông tin hàng đầu về thú cưng. Chúng tôi cam kết tất cả nội dung cung cấp trên trang đều được trích dịch từ các nguồn web nước ngoài rõ ràng, có ý kiến và trích dẫn thú y, từ đó mang lại những giải pháp chính xác cho người xem.</p>
-            <div class="commitment-container">
-                <div class="commitment-item">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                    <h3>Nội dung</h3>
-                    <p>Nội dung chất lượng, chính xác, có nguồn uy tín, có thú y xem xét.</p>
+        <div class="container">
+            <div class="commitment-section">
+                <h1>Cam kết</h1>
+                <p class="text-center">Petshop được định hình là trang web thông tin hàng đầu về thú cưng. Chúng tôi cam kết tất cả nội dung cung cấp trên trang đều được trích dịch từ các nguồn web nước ngoài rõ ràng, có ý kiến và trích dẫn thú y, từ đó mang lại những giải pháp chính xác cho người xem.</p>
+                <div class="commitment-container">
+                    <div class="commitment-item">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <h3>Nội dung</h3>
+                        <p>Nội dung chất lượng, chính xác, có nguồn uy tín, có thú y xem xét.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Sản phẩm</h3>
+                        <p>Sản phẩm có lượt đánh giá cao, được phân tích, review chính xác.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <h3>Hỗ trợ</h3>
+                        <p>Hỗ trợ hết mình, gợi ý những nguồn khám bệnh thú cưng uy tín, chất lượng.</p>
+                    </div>  
                 </div>
-                <div class="commitment-item">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Sản phẩm</h3>
-                    <p>Sản phẩm có lượt đánh giá cao, được phân tích, review chính xác.</p>
-                </div>
-                <div class="commitment-item">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <h3>Hỗ trợ</h3>
-                    <p>Hỗ trợ hết mình, gợi ý những nguồn khám bệnh thú cưng uy tín, chất lượng.</p>
-                </div>  
             </div>
         </div>
     </div>
@@ -120,72 +152,118 @@
         <div class="subject">
             <h2>Sản phẩm bán chạy</h2>
         </div>
-        <!-- <div class="banner">
-            <div class="banner_1">
-                <a href="#"><img src="https://paddy.vn/cdn/shop/files/cat_banner_1370x.jpg?v=1670135516" alt=""></a>
-            </div>
-            <div class="banner_2">
-                <a href="#"><img src="https://paddy.vn/cdn/shop/files/dog_banner_1370x.jpg?v=1670135189" alt=""></a>
-            </div>
-        </div> -->
-        <div class="products_container">
-            
-            <div class="products_list">
-                <div class="product_items">
-                    <img src="https://fagopet.vn/storage/97/xz/97xzhfuwfyxb0297v2m2n2rhxnjr_bon-ve-sinh-cho-meo-2.webp" alt="">
-                    <p class="info"><a href="#">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a></p>
-                    <p class="price" style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
+        
+           
+        <div class="container my-5">
+            <div class="row g-4">
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Nhà vệ sinh cho mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NuQJvsPBxXj2HHHs0cxODccW9k3xbmfnTg&s" alt="">
-                    <p class="info"><a href="#">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a></p>
-                    <p class="price" style="margin-top: 40px;">Giá: 150.000 VNĐ</p>
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Cần câu mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://luckypetshop.vn/wp-content/uploads/2020/02/vong-co-chuong-cho-meo-2-lop-1.png" alt="">
-                    <p class="info"><a href="#">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a></p>
-                    <p class="price" style="margin-top: 40px;">Giá: 150.000 VNĐ</p>
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Vòng cổ mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://fagopet.vn/uploads/images/624289159487f634f8442204/thuc-an-hat-cho-meo-catsrang.webp" alt="">
-                    <p class="info"><a href="#">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a></p>
-                    <p class="price" style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
-                </div> 
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Hạt Catsrang">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
 
         <div class="subject">
             <h2>Giống thú cưng phổ biến</h2>
         </div>
-        <div class="products_container">
-           
-            <div class="products_list">
-                <div class="product_items">
-                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/anh-meo-Munchkin-den-trang-dang-yeu.jpg" alt="">
-                    <p class="info"><a href="#">Mèo Anh Munchkin Bicolor chân ngắn </a></p>
-                    <p class="price" style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
+        <div class="container my-5">
+            <div class="row g-4">
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Nhà vệ sinh cho mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Nhà vệ sinh cho mèo khép kín Hoshi Pet NVS03 - Khay vệ sinh cho mèo có nắp đậy</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://chocanhdanang.com/wp-content/uploads/2024/03/cho-golden-retriever-mau-vang-2-thang-tuoi-5-1-400x400-2.jpg" alt="">
-                    <p class="info"><a href="#">Chó golden Retriever nâu 2 tháng tuổi</a></p>
-                    <p class="price"style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Cần câu mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Cần câu mèo gắn bông và chuông dễ thương đáng yêu giúp mèo chơi khoái trí chơi cả ngày không chán</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://azpet.com.vn/wp-content/uploads/2021/06/C12106-1-1.jpg" alt="">
-                    <p class="info"><a href="#">Chó Husky thuần chủng 6 tháng tuổi</a></p>
-                    <p class="price"style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Vòng cổ mèo">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Vòng cổ kèm chuông cho chó mèo từ 5kg đến 10kg bản rộng 1.5cm in chữ Puppy Kitten nhiều màu sắc</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_items">
-                    <img src="https://azpet.com.vn/wp-content/uploads/2022/07/M770-M12481-1.jpg" alt="">
-                    <p class="info"><a href="#">Mèo Anh lông dài Lilac đực thuần chủng</a></p>
-                    <p class="price" style="margin-top: 60px;">Giá: 150.000 VNĐ</p>
-                </div> 
+                <!-- Product Item -->
+                <div class="col-md-3">
+                    <div class="card h-100 text-justify">
+                        <img src="https://via.placeholder.com/150x150" class="card-img-top" alt="Hạt Catsrang">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="#" class="text-black text-decoration-none fw-bold">Hạt Catsrang Nguyên Seal 5kg Dành Cho Mèo Giúp Bổ Sung Dinh Dưỡng Cung Cấp Protein</a>
+                            </h6>
+                            <p class="text-danger fw-bold mt-5 mb-0">Giá: 150.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </div>
-    
+    <hr>
     <div class="News">
         <div class="news-title">
          <h1>Những bài viết mới nhất</h1>
@@ -194,27 +272,29 @@
          <p><b>Dưới đây là những bài viết về kinh nghiệm, kiến thức chăm sóc thú cưng tại website Petshop.com</b></p>
         </div>
         <div class="news-link">
-         <p><b>Xem thêm tại:</b><a href="News.html">Tin tức thú cưng</a></p>
+         <p><b>Xem thêm tại: </b><a href="News.html" class="text-decoration-none">Tin tức thú cưng</a></p>
         </div>
-        <div class="new-link">
-            <div class="news-item">
-                <img src="cho-corgi.webp" alt="corgi cực cute" style="width: 300px; height: 200px;">
-                <h4><a href="https://monspet.com/su-that-ve-giong-cho-corgi">Sự thật về giống chó Corgi và 6+ điều bạn chưa biết!!!</a></h4>
-                <div class="content">Chó Corgi với vẻ ngoài đáng yêu và tính cách thân thiện, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến là giống chó hoàng gia, chúng không chỉ là thú cưng trong gia đình mà...</div>
+        <div class="container my-5">
+            <div class="new-link row g-4">
+                <div class="news-item col-md-4">
+                    <img src="https://monspet.com/wp-content/uploads/2024/02/cho-corgi.jpg" alt="corgi cực cute">
+                    <h4><a href="https://monspet.com/su-that-ve-giong-cho-corgi">Sự thật về giống chó Corgi và 6+ điều bạn chưa biết!!!</a></h4>
+                    <div class="content">Chó Corgi với vẻ ngoài đáng yêu và tính cách thân thiện, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến là giống chó hoàng gia, chúng không chỉ là thú cưng trong gia đình mà...</div>
+                </div>
+                <div class="news-item col-md-4">
+                    <img src="https://monspet.com/wp-content/uploads/2024/02/corgi-co-duoi-khong.jpg" alt="Lý giải chó corgi có đuôi không và tại sao lại cắt đuôi">
+                    <h4><a href="https://monspet.com/ly-giai-cho-corgi-co-duoi-khong">Lý giải: Chó Corgi có đuôi không & tại sao lại cắt đuôi?</a></h4>
+                    <div class="content">Chó Corgi, với đôi chân ngắn và thân hình dài, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến nhiều nhất qua hai loại: Pembroke Welsh Corgi và Cardigan Welsh Corgi, chúng không chỉ nổi bật...</div>
+                </div>
+                <div class="news-item col-md-4">
+                    <img src="https://monspet.com/wp-content/uploads/2024/01/meo-bi-ran-tai.jpg" alt="corgi cực cute">
+                    <h4><a href="https://monspet.com/dieu-tri-cho-meo-bi-ran-tai">Điều trị cho mèo bị rận tai chỉ với 4 cách đơn giản</a></h4>
+                    <div class="content">Rân tai ở mèo còn được biết đến với tên khoa học là Otodectes cynotis, là loại ve sống trên bề mặt, thường gặp ở mèo, chó, thỏ và chồn. Chúng thường được tìm thấy trong ống tai nhưng cũng có thể sống trên bề mặt...</div>
+                </div>
             </div>
-            <div class="news-item">
-                <img src="corgi-co-duoi-khong.webp" alt="Lý giải chó corgi có đuôi không và tại sao lại cắt đuôi" style="width: 300px; height: 200px;">
-                <h4><a href="https://monspet.com/ly-giai-cho-corgi-co-duoi-khong">Lý giải: Chó Corgi có đuôi không & tại sao lại cắt đuôi?</a></h4>
-                <div class="content">Chó Corgi, với đôi chân ngắn và thân hình dài, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến nhiều nhất qua hai loại: Pembroke Welsh Corgi và Cardigan Welsh Corgi, chúng không chỉ nổi bật...</div>
-            </div>
-            <div class="news-item" id="fix">
-                <img src="meo-bi-ran-tai-300x210.webp" alt="corgi cực cute" style="width:300px; height: 200px;">
-                <h4><a href="https://monspet.com/dieu-tri-cho-meo-bi-ran-tai">Điều trị cho mèo bị rận tai chỉ với 4 cách đơn giản</a></h4>
-                <div class="content">Rân tai ở mèo còn được biết đến với tên khoa học là Otodectes cynotis, là loại ve sống trên bề mặt, thường gặp ở mèo, chó, thỏ và chồn. Chúng thường được tìm thấy trong ống tai nhưng cũng có thể sống trên bề mặt...</div>
-            </div>
-            <div style="clear: both;"></div>
         </div>
-     </div>
+
+        
      <footer class="footer">
         <div class="footer-container">
             <div class="about">

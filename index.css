@@ -4,9 +4,6 @@
     box-sizing: border-box;
     
 }
-body {
-    background-color: #f3e4f0;
-}
 .navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
   }
@@ -23,6 +20,30 @@ body {
   .nav-link.active {
     color: #23fcff !important;
   }
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .dropdown-menu a {
+    color: white;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .dropdown-menu {
+    display: none;
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  .dropdown-item:hover {
+    background-color: #495057;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
 
 .slide {
     position: relative;
@@ -173,7 +194,7 @@ body {
 }
 
 .commitment_body {
-    background-color: #f9f4f8;
+    background-color: #eeebed;
     padding: 50px 20px;
 }
 
@@ -245,18 +266,6 @@ body {
     
 }
 
-.products_container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-.products {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
 .subject h2 {
     font-family: 'Coiny';
     font-weight: bold;
@@ -266,109 +275,32 @@ body {
     color: #bf5a84;
 }
 
-.products_list {
-    display: flex;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 10px auto;
-    width: 100%;
+.card-title {
+    color: black;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
+}
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
-.product_items {
-    flex: 0 0 auto;
-    width: calc(100% / 4 - 20px);
-    text-align: justify;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.product_items:hover {
+.card:hover {
     cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.product_items img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.card-title {
+    color: black;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
 }
 
-.product_items .info a {
-    font-family: 'League Spartan';
-    font-size: 18px;
-    font-weight: bold;
-    color: #272727;
-    text-decoration: none;
+.card img {
+    transition: transform 0.3s;
 }
 
 
-
-.product_items .price {
-    text-align: left;
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #ff6600;
-    font-weight: bold;
-}
-.scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.scroll-btn:hover {
-    opacity: 1;
-}
-
-.scroll-btn.left {
-    left: -20px;
-}
-
-.scroll-btn.right {
-    right: 20px;
-}
-
-@media (max-width: 1024px) {
-    .products_list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .products_list {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    .product_items {
-        width: calc(100% / 2 - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .products_list {
-        grid-template-columns: 1fr; 
-    }
-    .subject h2 {
-        font-size: 1.4em;
-    }
-}
 
 .News {
     width: 100%;
@@ -376,6 +308,7 @@ body {
 }
 
 .news-title {
+    font-family: 'Coiny';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,30 +331,41 @@ body {
 }
 .news-link a{
     color:#0D5FF6;
-    text-decoration: none;
     font-weight: bold;
 }
 .new-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin: 40px auto;
 }
-.news-item {
-    width: 26%;
-    height: 510px;
-    margin: 10px 25px 25px 10px;
-    align-items: center;
-    padding: 2%;
-    border: 2px solid #000;
-}
-
-.news-item h4{
-    color: #0d5ff8;
-}
-.news-item img{
+.news-item img {
     width: 100%;
     height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.news-item h4 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.news-item .content {
+    margin-top: 10px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+.news-item a {
+    text-decoration: none;
+}
+
+.news-item:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1024px) {
     .news-item { flex: 1 1 calc(50% - 40px); } 
