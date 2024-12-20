@@ -56,7 +56,7 @@
     font-weight: bold;
     color: #fff;
 }
-.Nav-links .Home {
+.Nav-links .Pet_kinds {
     color: #23FCFF;
 }
 
@@ -128,3 +128,85 @@
       display: block;
     }
   }
+  .slide-intro{
+    cursor: pointer;
+    
+    width: 100%;
+    height: 500px;
+    animation: slider 10s ease infinite;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+@keyframes slider{
+    0%, 30% {
+        background-image: url(https://theme.hstatic.net/1000238938/1000576591/14/banner_collection.jpg?v=386);
+       
+}
+    30%, 60% {
+        background-image: url(https://nupet.vn/wp-content/uploads/2023/01/slider-nupet-new-3.jpg);
+        
+    }
+    60%, 90% {
+        background-image: url(https://bizweb.dktcdn.net/100/432/370/files/1-fd4013b4-3b55-4f8b-9317-65be7e4eb09e.png?v=1627704655750);
+        
+    }
+    90%, 100% {
+        background-image: url(https://qltt.vn/stores/news_dataimages/hanhnth3/032024/30/10/0606_maxresdefault-1.jpg?rt=20240330100607);
+        
+    }
+
+}
+
+
+
+
+/* Sidebar */
+
+.sidebar h5 {
+    font-weight: bold;
+}
+  
+.sidebar .list-group-item {
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+  
+.sidebar .list-group-item:hover {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+  
+  /* Card styles */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Pagination */
+ 
+  .pagination .page-link {
+    color: #007bff;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+  }
+  
