@@ -81,6 +81,43 @@
     justify-items: center;
     margin: 0;
 }
+.carousel-item {
+    width: 100vw;  
+    position: relative;
+}
+.carousel-item img {
+    height: 900px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .banner-text {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .carousel-caption p {
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+ .gallery-img {
+    transition: transform 0.3s ease;
+    filter: brightness(0.7);
+}
+    
+.gallery-img:hover {
+    transform: scale(1.02);
+    filter: brightness(0.8);
+}
 .content {
     width: 100%;
     height: auto;
@@ -144,6 +181,17 @@
 .button:hover {
     border: 1px solid  #ce3232;
     
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about, .links, .contact {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 768px) {
     .text_1 h1 {
