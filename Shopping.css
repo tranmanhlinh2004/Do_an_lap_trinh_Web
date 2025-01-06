@@ -5,44 +5,97 @@
 
 } 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-  }
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
 
-  .navbar-brand {
-    font-family: "Coiny", cursive;
-    font-size: 30px;
-  }
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  text-transform: uppercase;
+}
 
-  .nav-link:hover {
-    color: #23fcff !important;
-  }
+.navbar-nav .nav-link {
+  color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 
-  .nav-link.active {
-    color: #23fcff !important;
-  }
-  .dropdown-menu {
-    background-color: #343a40;
-    border: none;
-    transition: all 0.3s ease;
-  }
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    transform: translateY(0);
-    opacity: 1;
-  }
-  .dropdown-menu {
-    display: none;
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  .dropdown-menu a {
-    color: white;
-  }
-  .dropdown-item:hover {
-    background-color: #495057;
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f8f9fa;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #ffc107;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  border-radius: 20px;
+  border: 1px solid #ffc107;
+}
+
+.btn-outline-light {
+  border-radius: 20px;
+  color: #ffc107;
+  border-color: #ffc107;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+.login .user-icon,
+.cart .cart-icon {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.login .user-icon:hover,
+.cart .cart-icon:hover {
+  cursor: pointer;
+  color: #ffc107;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+.dropdown-menu {
+  display: none;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.dropdown-item:hover {
+  background-color: #495057;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
   
 .slide-intro{
     cursor: pointer;

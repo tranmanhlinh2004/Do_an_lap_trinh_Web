@@ -5,26 +5,79 @@
     
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
   }
-
+  
   .navbar-brand {
-    font-family: "Coiny", cursive;
-    font-size: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-transform: uppercase;
   }
-
-  .nav-link:hover {
-    color: #23fcff !important;
+  
+  .navbar-nav .nav-link {
+    color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
   }
-
-  .nav-link.active {
-    color: #23fcff !important;
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
   }
-.dropdown-menu {
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-menu {
     background-color: #343a40;
     border: none;
+  }
+  
+  .dropdown-item {
+    color: #f8f9fa;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    color: #ffc107;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .form-control {
+    border-radius: 20px;
+    border: 1px solid #ffc107;
+  }
+  
+  .btn-outline-light {
+    border-radius: 20px;
+    color: #ffc107;
+    border-color: #ffc107;
     transition: all 0.3s ease;
   }
+  
+  .btn-outline-light:hover {
+    background-color: #ffc107;
+    color: #343a40;
+  }
+  
+  .login .user-icon,
+  .cart .cart-icon {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .login .user-icon:hover,
+  .cart .cart-icon:hover {
+    cursor: pointer;
+    color: #ffc107;
+  }
+  
   .dropdown-menu a {
     color: white;
   }
@@ -43,159 +96,16 @@
     color: #fff;
     transition: background-color 0.3s ease;
   }
-  
-
-.slide {
-    position: relative;
-    display: inline-block;
-}
-.slide img {
+ .card-img {
     width: 100%;
-    height: auto;
-}
-.slide h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 70px;
-    font-weight: 900;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.slide p {
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 80%);
-    color: white;
-    font-size: 23px;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    margin: 0;
-}
-.content {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 30px;
-}
-.title {
-    font-family: 'League Spartan';
-    font-size: 48px;
-    font-weight: bold;
-    color: #333;
-}
-.paragraph {
-    font-family: 'League Spartan';
-    font-size: 1.3rem;
-    line-height: 1.6;
-    padding-left: 40px;
-    margin-bottom: 20px;
-    color: #000;
-    text-align: justify;
-}
-.paragraph li {
-    font-family: 'League Spartan';
-    font-size: 22px;
-    line-height: 1.6;
-    padding-left: 40px;
-    color: #000;
-    text-align: justify;
-    list-style: none;
-}
-.subtitle {
-    font-family: 'Coiny';
-    font-size: 36px;
-    font-weight: bold;
-    color: #eb8c8c;
-    margin-bottom: 40px;
-}
-.image {
-    float: right;
-    margin-left: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 20px;
-}
-.image img {
-    float: right;
-    display: flex;
-    border-radius: 20px;
-}
-.button {
-    display: inline-block;
-    margin: 20px 60px;
-    padding: 10px 40px;
-    font-size: 20px;
-    color: #333;
-    border: 1px solid  #333;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-.button:hover {
-    border: 1px solid  #ce3232;
-    
-}
-@media (max-width: 768px) {
-    .text_1 h1 {
-        font-size: 2rem;
-    }
+    height: 467.58px;
+ }
 
-    .text_2 p {
-        font-size: 1rem;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .paragraph {
-        font-size: 0.9rem;
-    }
-    .paragraph li {
-        font-size: 0.9rem;
-    }
-    .image img {
-        width: 600px;
-        height: 550px;
-    }
-}
-
-@media (max-width: 480px) {
-    .text_1 h1 {
-        font-size: 1.5rem;
-    }
-
-    .text_2 p {
-        font-size: 0.9rem;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
-    .paragraph {
-        font-size: 0.8rem;
-    }
-
-    .button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
 
 .commitment_body {
     background-color: #eeebed;
     padding: 50px 20px;
+    margin-bottom: 30px;
 }
 
 .commitment-section {
@@ -265,16 +175,31 @@
 
     
 }
-
+.subject {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .subject h2 {
-    font-family: 'Coiny';
+    padding: 10px 80px;
+    display: inline-block;
+    font-family: 'League Spartan';
     font-weight: bold;
     text-align: center;
     margin: 20px;
     font-size: 1.8em;
-    color: #bf5a84;
+    
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #bf5a84;
 }
-
+.subject .line {
+    width: 450px;
+    height: 1.5px;
+    background-color: #bf5a84;
+}
 .card-title {
     color: black;
     font-size: 16px;
