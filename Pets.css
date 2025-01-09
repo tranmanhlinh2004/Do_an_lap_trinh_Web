@@ -78,6 +78,7 @@
 
 .sidebar h5 {
     font-weight: bold;
+    font-family: "Coiny";
 }
   
 .sidebar .list-group-item {
@@ -111,6 +112,13 @@
     font-size: 0.9rem;
     color: #666;
   }
+
+  .card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
   
   /* Pagination */
  
@@ -125,6 +133,86 @@
 .num-list {
     margin-top: 40px;
 }
+
+
+
+
+
+.news-list{
+  background-color: #f6f4f4;
+}
+.news-header{
+  background-color: #8e91e5d4;
+}
+.news-title {
+  font-family: "Coiny";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.news-title h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.news-intro, .news-link {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-item {
+  border: 2px solid #4e24d6;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: content-box;
+  max-width: 400px; /* Giới hạn chiều rộng tối đa */
+  max-height: 29%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+}
+
+.news-item h4 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.news-item .content {
+  margin-top: 10px;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.news-item:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Đáp ứng thiết bị di động */
+@media (max-width: 1024px) {
+  .news-item {
+      flex: 1 1 calc(50% - 40px); /* 2 ô trong một hàng */
+  }
+}
+
+
+
+
 .footer {
     background-color: #252323;
     color: #fff;
@@ -208,41 +296,7 @@
     }
 }
 
-.news-title h1 {
-  text-align: center;
-  
-}
 
-.news-intro, .news-link {
-  text-align: center;
-  margin: 10px 0;
-}
 
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
 
-.news-item {
-  border: 1px solid #000;
-  padding: 10px;
-  box-sizing: border-box;
-  max-width: 400px; /* Giới hạn chiều rộng tối đa */
-  max-height: 29%;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
 
-.news-item img {
-  width: 100%;
-  height: auto;
-}
-
-/* Đáp ứng thiết bị di động */
-@media (max-width: 1024px) {
-  .news-item {
-      flex: 1 1 calc(50% - 40px); /* 2 ô trong một hàng */
-  }
-}

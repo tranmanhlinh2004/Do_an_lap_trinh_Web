@@ -362,6 +362,9 @@
     align-items: center;
     margin-top: 30px;
 }
+.news-item{
+    border-radius: 10px;
+}
 .news-intro{
     display: flex;
     justify-content: center;
@@ -385,7 +388,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
+    margin: 5px auto;
 }
 .news-item img {
     width: 100%;
@@ -396,14 +399,14 @@
 
 .news-item h4 {
     margin-top: 15px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .news-item .content {
     margin-top: 10px;
     color: #6c757d;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .news-item a {
     text-decoration: none;
@@ -421,6 +424,8 @@
 @media (max-width: 768px) { 
     .news-item { flex: 1 1 calc(100% - 40px);  }
 }
+
+
 
 .footer {
     background-color: #252323;
