@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FontAwesome/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Pets.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Trang thú cưng tổng hợp </title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Petshop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Introduce.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Shopping.html"
+                  id="shoppingDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Mua sắm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Thức ăn & Dinh dưỡng</a></li>
+                  <li><a class="dropdown-item" href="#">Phụ kiện & Đồ chơi</a></li>
+                  <li><a class="dropdown-item" href="#">Vệ sinh & Chăm sóc</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="petsDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Thú cưng
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chó</a></li>
+                  <li><a class="dropdown-item" href="#">Mèo</a></li>
+                  <li><a class="dropdown-item" href="#">Các loài thú nhỏ</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="News.html">Tin tức</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- The Modal -->
+        <button id="cart">
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          Giỏ Hàng
+      </button>
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Giỏ Hàng</h5>
+                  <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                  <div class="cart-row">
+                      <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                      <span class="cart-price cart-header cart-column">Giá</span>
+                      <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                  </div>
+                  <div class="cart-items">
+
+                  </div>
+                  <div class="cart-total">
+                      <strong class="cart-total-title">Tổng Cộng:</strong>
+                      <span class="cart-total-price">0VNĐ</span>
+                  </div>
+              </div>
+
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                  <button type="button" class="btn btn-primary order">Thanh Toán</button>
+              </div>
+          </div>
+      </div>
+      </nav>
+
+
+    <div class="slide-intro"></div>
+
+    
+    <div class="container-fluid py-4">
+        <div class="row">
+          <!-- Sidebar -->
+          <aside class="col-md-3">
+            <div class="sidebar p-3 bg-light">
+              <h5 class="mb-3">Danh mục sản phẩm</h5>
+             
+              <div class="mt-4">
+                <h6 class="mt-2">Thú cưng các loại</h6>
+                <ul class="list-group">
+                  <li class="list-group-item">Mèo</li>
+                  <li class="list-group-item">Chó</li>
+                  <li class="list-group-item">Chim</li>
+                  <li class="list-group-item">Hamster</li>
+                  <li class="list-group-item">Thỏ</li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+    
+          <!-- Content -->
+          <main class="col-md-9">
+            <h3 class="text-center mb-4" style="font-family: 'Coiny';">Thú cưng các loại</h3>
+            <input type="text" class="form-control mb-4" placeholder="Tìm kiếm...">
+            <div class="row">
+              <!-- Card -->
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2021/08/image-2024-08-22T133052.999-768x1024.png" class="card-img-top" alt="Pet">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Golden</h6>
+                    <p class="card-text">15,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2024/09/image-2024-09-30T111459.496-768x1024.png" class="card-img-top" alt="Poodle nâu">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Poodle nâu</h6>
+                    <p class="card-text">7,500,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2021/05/image-2024-08-23T164240.334-768x1024.png" class="card-img-top" alt="Phốc sóc trắng">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Phốc sóc trắng</h6>
+                    <p class="card-text">6,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2024/12/image-2024-12-11T083711.477-768x1007.png" class="card-img-top" alt="Mèo Anh chân ngắn">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo Anh chân ngắn</h6>
+                    <p class="card-text">5,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2022/07/image-2024-08-31T111024.668-768x1024.png" class="card-img-top" alt="Mèo lông ngắn tai cụp">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo lông ngắn tai cụp</h6>
+                    <p class="card-text">6,500,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://matpetfamily.com/wp-content/uploads/2021/02/image-12-768x1024.png" class="card-img-top" alt="Husky Alaska">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Husky Alaska</h6>
+                    <p class="card-text">12,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://shopvatnuoi.vn/wp-content/uploads/2024/08/German-Shepherd-Cho-becgie-Duc-shopvatnuoivn-nai-pet-c0.jpg" class="card-img-top" alt="Becgie Đức">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Becgie Đức</h6>
+                    <p class="card-text">15,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlnhxHIz4TROJd7LQK_zZR-XOfZaFYN1r59bGli7xrbu7G8erHSIgG6sHgSkpTrjMVzF7x69uArjr1IMM8NHYIjCLhccDEh1t3TwWQ8fKAseZUbApfd4S1jvq7zaDp3-d7RWdZWcBIFxLIu6zzz4Hb2aAjGKcx8QQcdBwa0EaM_RYIqnjVSLRWMR0eK2g/s750/meo-munchkin-chan-ngan-lilac-point-1_2-duc-70.jpg" class="card-img-top" alt="Mèo Munchkin chân ngắn">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo Munchkin chân ngắn</h6>
+                    <p class="card-text">2,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://pethouse.com.vn/wp-content/uploads/2022/11/anh-meo-anh-long-ngan-919384.jpg" class="card-img-top" alt="Mèo Anh lông ngắn">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo Anh lông ngắn</h6>
+                    <p class="card-text">8,000,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://thegioipetcanh.com/wp-content/uploads/2023/05/68e263807bb8bfe6e6a9.jpg" class="card-img-top" alt="Mèo tabby">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo Tabby</h6>
+                    <p class="card-text">6,300,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://ampet.vn/wp-content/uploads/2022/09/Meo-tai-cup-Scottish-Fold-2-1200x1200.jpg" class="card-img-top" alt="Mèo tai cụp">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Mèo tai cụp</h6>
+                    <p class="card-text">7,500,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                  <img src="https://lolipet.net/wp-content/uploads/140710_WILD_Hamster.jpg.CROP_.promo-mediumlarge.jpg" class="card-img-top" alt="Hamster :3">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Hamster</h6>
+                    <p class="card-text">350,000đ</p>
+                    <button type="button" class="btn btn-outline-primary">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              
+    
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example" class="num-list">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+              </ul>
+            </nav>
+          </main>
+        </div>
+      </div>
+
+  <div class="news-header">
+        <h1 style="text-align: center; margin: 10px; font-family: 'Coiny';">Tin tức thú cưng</h1>
+        <h5 style="text-align: center; margin: 10px;">Đây là một vài bài viết để các bạn biết hơn về pet của mình nhé!</h5>
+  </div>
+
+
+  <div class="news-list">
+        <div class="news-item">
+             <img src="https://monspet.com/wp-content/uploads/2024/02/cho-corgi.jpg" alt="corgi cực cute" style="width: 100%; height: auto;">
+            <h4><a href="https://monspet.com/su-that-ve-giong-cho-corgi">Sự thật về giống chó Corgi và 6+ điều bạn chưa biết!!!</a></h4> 
+            <div class="content">Chó Corgi với vẻ ngoài đáng yêu và tính cách thân thiện, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến là giống chó hoàng gia, chúng không chỉ là thú cưng trong gia đình mà...</div>
+         </div>
+        <div class="news-item" >
+            <img src="https://monspet.com/wp-content/uploads/2024/02/corgi-co-duoi-khong.jpg" alt="Lý giải chó corgi có đuôi không và tại sao lại cắt đuôi" style="width: 100%; height: auto;">
+            <h4><a href="https://monspet.com/ly-giai-cho-corgi-co-duoi-khong">Lý giải: Chó Corgi có đuôi không & tại sao lại cắt đuôi?</a></h4>
+            <div class="content">Chó Corgi, với đôi chân ngắn và thân hình dài, đã trở thành một trong những giống chó được yêu thích nhất trên thế giới. Được biết đến nhiều nhất qua hai loại: Pembroke Welsh Corgi và Cardigan Welsh Corgi, chúng không chỉ nổi bật...</div>
+        </div>
+        <div class="news-item">
+            <img src="https://monspet.com/wp-content/uploads/2024/01/meo-bi-ran-tai.jpg" alt="corgi cực cute" style="width: 100%; height: auto;">
+            <h4><a href="https://monspet.com/dieu-tri-cho-meo-bi-ran-tai">Điều trị cho mèo bị rận tai chỉ với 4 cách đơn giản</a></h4> 
+            <div class="content">Rận tai ở mèo còn được biết đến với tên khoa học là Otodectes cynotis, là loại ve sống trên bề mặt, thường gặp ở mèo, chó, thỏ và chồn. Chúng thường được tìm thấy trong ống tai nhưng cũng có thể sống trên bề mặt...</div>
+        </div> 
+        <div class="news-item">
+          <img src="https://monspet.com/wp-content/uploads/2024/03/cho-dit-trai-tim.jpg" alt="corgi cực cute" style="width: 100%; height: auto;">
+          <h4><a href="https://monspet.com/giai-ma-ve-cho-dit-trai-tim">Giải mã: "Chó deet trái tim" - giống chó hoàng gia đáng yêu</a></h4> 
+          <div class="content">"Giống chó Corgi, với biệt danh “chó mông trái tim,” được biết đến rộng rãi nhờ vẻ ngoài đáng yêu và đặc biệt là hình dáng mông giống hình trái tim. Loài chó này có nguồn gốc từ xứ Wales, Anh, và được yêu thích bởi bản tính thân thiện, trí thông minh cao và sự linh hoạt trong việc học hỏi..."</div>
+        </div>
+        <div class="news-item">
+          <img src="https://monspet.com/wp-content/uploads/2023/10/san-pham-cho-meo-bi-ran.png" alt="corgi cực cute" style="width: 100%; height: auto;">
+          <h4><a href="https://monspet.com/dieu-tri-cho-meo-bi-ran-tai">Gợi ý 8 sản phẩm cho mèo bị Rận có hiệu quả bất ngờ</a></h4> 
+          <div class="content">Rân tai ở mèo còn được biết đến với tên khoa học là Otodectes cynotis, là loại ve sống trên bề mặt, thường gặp ở mèo, chó, thỏ và chồn. Chúng thường được tìm thấy trong ống tai nhưng cũng có thể sống trên bề mặt...</div>
+        </div>
+        <div class="news-item">
+          <img src="https://monspet.com/wp-content/uploads/2021/01/lam-the-nao-ngan-chan-thoi-quen-xau-300x150.png" alt="corgi cực cute" style="width: 100%; height: auto;">
+          <h4><a href="https://monspet.com/dieu-tri-cho-meo-bi-ran-tai">Làm thế nào để ngăn chặn thói quen xấu của chó mèo ?</a></h4> 
+          <div class="content">Chó mèo là người bạn thân thiết nhất của chúng ta ngày nay. Nhưng ngay cả người bạn thân nhất của bạn cũng có một số thói quen mà bạn đôi khi không thể chịu nổi. Bạn cố gắng khiến thú cưng của mình dừng những hành động đó lại, nhưng những nỗ lực của bạn có thể khuyến khích hành vi xấu của thú cưng gia tăng chứ không...</div>
+        </div>
+  </div>
+  </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="about">
+                <h3>Về chúng tôi</h3>
+                <p>
+                  <i>PetShop</i> là cổng thông tin khổng lồ và hoàn toàn miễn phí về
+                  các vấn đề xung quanh thú cưng
+                </p>
+              </div>
+            <div class="links">
+                <h3>Danh sách trang</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Liên hệ</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/manhlinh.tran.710" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/manhlinh.tran.710/" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
