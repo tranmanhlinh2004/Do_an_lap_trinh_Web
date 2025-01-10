@@ -1,5 +1,6 @@
 body {
-    background-color: #f8f9fa;
+    background: url('https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg');
+    background-size: cover;
     font-family: Arial, sans-serif;
 }
 
@@ -8,6 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
 }
 
 .form-container {

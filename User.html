@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Register Page</title>
+    <title>PetShop - Login</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./Style/index.css"/>
@@ -44,12 +44,6 @@
                 <button type="submit" class="btn btn-primary w-100">Xác nhận</button>
             </form>
 
-            <div class="social-login">
-                <i class="fab fa-google" title="Đăng nhập bằng Google"></i>
-                <i class="fab fa-facebook" title="Đăng nhập bằng Facebook"></i>
-                <i class="fab fa-twitter" title="Đăng nhập bằng Twitter"></i>
-            </div>
-
             <div class="toggle-button">
                 <p id="toggle-text">Chưa có tài khoản? <a id="toggle-link">Đăng ký</a></p>
             </div>
@@ -80,7 +74,7 @@
                 toggleText.innerHTML = 'Đã có tài khoản? <a id="toggle-link">Đăng nhập</a>';
             }
 
-            
+
             document.getElementById('toggle-link').addEventListener('click', () => {
                 isLogin = !isLogin;
                 updateForm();
