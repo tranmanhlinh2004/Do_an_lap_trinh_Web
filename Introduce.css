@@ -58,19 +58,24 @@
   color: #343a40;
 }
 
-.login .user-icon,
-.cart .cart-icon {
+.login .user-icon a {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.cart .cart-icon a {
   color: #f8f9fa;
   font-size: 1.5rem;
   margin-left: 1rem;
   transition: color 0.3s ease;
 }
 
-.login .user-icon:hover,
-.cart .cart-icon:hover {
-  cursor: pointer;
-  color: #ffc107;
-}
+.login .user-icon a:hover,
+  .cart .cart-icon a:hover {
+    cursor: pointer;
+    color: #ffc107;
+  }
 
 .dropdown-menu a {
   color: white;
