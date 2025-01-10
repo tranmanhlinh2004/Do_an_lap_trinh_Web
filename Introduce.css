@@ -90,11 +90,13 @@
   color: #fff;
   transition: background-color 0.3s ease;
 }
-    .carousel-item img {
-    height: 900px;
-    object-fit: cover;
-  }
-
+.carousel-item img {
+    height: 700px;
+    object-fit:fill;
+}
+.slide {
+    margin: auto 80px;
+}
   .carousel-caption {
     top: 50%;
     left: 50%;

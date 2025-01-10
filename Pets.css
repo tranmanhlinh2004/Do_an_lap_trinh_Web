@@ -172,19 +172,6 @@
     transition: all 0.1s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-  
- 
-  .pagination .page-link {
-    color: #007bff;
-  }
-  
-  .pagination .page-link:hover {
-    background-color: #f8f9fa;
-    color: #0056b3;
-  }
-.num-list {
-    margin-top: 40px;
-}
 
 .sub{
   font-weight: bold;
