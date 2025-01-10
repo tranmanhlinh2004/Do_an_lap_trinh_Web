@@ -107,30 +107,29 @@
     background-size: 100% 100%;
 
 }
-@keyframes slider{
-    0%, 30% {
-        background-image: url(https://theme.hstatic.net/1000238938/1000576591/14/banner_collection.jpg?v=386);
-       
-}
-    30%, 60% {
-        background-image: url(https://nupet.vn/wp-content/uploads/2023/01/slider-nupet-new-3.jpg);
-        
-    }
-    60%, 90% {
-        background-image: url(https://bizweb.dktcdn.net/100/432/370/files/1-fd4013b4-3b55-4f8b-9317-65be7e4eb09e.png?v=1627704655750);
-        
-    }
-    90%, 100% {
-        background-image: url(https://qltt.vn/stores/news_dataimages/hanhnth3/032024/30/10/0606_maxresdefault-1.jpg?rt=20240330100607);
-        
-    }
 
-}
 .sidebar h5 {
     font-weight: bold;
     font-family: 'Coiny';
 }
-  
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  border-radius: 10px; /* Bo tròn góc ảnh */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%; 
+  padding: 10px;
+}
+
+.carousel {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng slider */
+  border-radius: 15px; /* Bo tròn toàn bộ slider */
+}
 .sidebar .list-group-item {
     border: none;
     padding: 8px 16px;
@@ -141,121 +140,126 @@
     background-color: #f8f9fa;
     border-left: 4px solid #007bff;
 }
+.feature-box {
+  border: 1px solid #8B4513; /* Màu nâu */
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-title {
+  font-weight: bold;
+  color: #8B4513; /* Màu nâu */
+  font-size: 16px;
+}
+
+.feature-desc {
+  color: #555;
+  font-size: 14px;
+}
+.custom-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #fff;
   
-  /* Card styles */
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .card img {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .card-title {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  /* Pagination */
- 
-  .pagination .page-link {
-    color: #007bff;
-  }
-  
-  .pagination .page-link:hover {
-    background-color: #f8f9fa;
-    color: #0056b3;
-  }
-.num-list {
-    margin-top: 40px;
+  border-radius: 8px;
 }
 
-.footer {
-    background-color: #252323;
-    color: #fff;
-    padding: 20px 0;
+.custom-navbar a {
+  text-decoration: none;
+  color: #5a4a42;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #bbaaa2;
+  border-radius: 8px;
+  margin: 0 10px;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+.custom-navbar a:hover {
+  color: #8b4513;
+  background-color: #f8f9fa;
+}
+.promotion-banner {
+  background-color: #693d27; /* Màu nâu */
+  color: #ffffff; /* Màu trắng */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px; /* Bo tròn */
+  display: inline-block;
+  border: 2px solid #8B4513; /* Đường viền nâu nhạt */
+  width: 800px;
+  margin: 20px auto;
+}
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.custom-button {
+  border: 1px solid #8B4513; /* Viền màu nâu nhạt */
+  color: #8B4513; /* Chữ màu nâu */
+  font-size: 16px;
+  font-weight: 500; /* Chữ vừa đậm */
+  padding: 10px 20px; /* Khoảng cách trong nút */
+  border-radius: 10px; /* Bo góc nhẹ */
+  background-color: transparent; /* Nền trong suốt */
+  text-align: center;
+  text-decoration: none; /* Xóa gạch chân (dành cho thẻ <a>) */
+  display: inline-block;
 }
 
-.about p{
-    margin-top: 20px;
-    font-style: 'League Spartan';
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 300px;
-    color: #acabab;
+.custom-button:hover {
+  background-color: #8B4513; /* Nền màu nâu khi hover */
+  color: #fff; /* Chữ trắng khi hover */
+  transition: all 0.4s ease-in-out;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #5a4a42;
 }
 
-.links h2, .contact h2 {
-    margin-bottom: 20px;
+footer h5 {
+  color: #5a4a42;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+footer a {
+  color: #5a4a42;
+  text-decoration: none;
 }
 
-.links ul li {
-    margin-bottom: 10px;
-    
+footer a:hover {
+  text-decoration: underline;
 }
 
-.links ul li a {
-    color: #b1aeae;
-    text-decoration: none;
-    font-size: 16px;
+.footer-icon {
+  font-size: 24px;
+  color: #5a4a42;
+  margin-right: 10px;
 }
 
-.links ul li a:hover {
-    
-    text-decoration: underline;
+.footer-icon:hover {
+  color: #8b4513;
 }
 
-.contact .social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icon {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #979797;
-    font-size: 20px;
-    transition: 0.3s ease;
-}
-
-.social-icon:hover {
-    font-size: 30px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about, .links, .contact {
-        margin-bottom: 20px;
-    }
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
 }

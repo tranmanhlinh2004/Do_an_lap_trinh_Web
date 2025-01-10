@@ -189,17 +189,18 @@
     font-weight: bold;
     text-align: center;
     margin: 20px;
-    font-size: 1.8em;
+    font-size: 1.5em;
     
     border-radius: 60px;
     color: #ffffff;
-    background-color: #bf5a84;
+    background-color: #8B4513;
 }
 .subject .line {
     width: 450px;
     height: 1.5px;
-    background-color: #bf5a84;
+    background-color: #8B4513;
 }
+
 .card-title {
     color: black;
     font-size: 16px;
@@ -211,8 +212,7 @@
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
@@ -304,85 +304,40 @@
 
 
 
-.footer {
-    background-color: #252323;
-    color: #fff;
-    padding: 20px 0;
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #5a4a42;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.about p{
-    margin-top: 20px;
-    font-style: 'League Spartan';
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 300px;
-    color: #acabab;
-}
-
-.links h2, .contact h2 {
-    margin-bottom: 20px;
-}
-
-.links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links ul li {
-    margin-bottom: 10px;
-    
-}
-
-.links ul li a {
-    color: #b1aeae;
-    text-decoration: none;
+footer h5 {
+    color: #5a4a42;
     font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.links ul li a:hover {
-    
+footer a {
+    color: #5a4a42;
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
-.contact .social-icons {
-    display: flex;
-    gap: 10px;
+.footer-icon {
+    font-size: 24px;
+    color: #5a4a42;
+    margin-right: 10px;
 }
 
-.social-icon {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #979797;
-    font-size: 20px;
-    transition: 0.3s ease;
+.footer-icon:hover {
+    color: #8b4513;
 }
 
-.social-icon:hover {
-    font-size: 30px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about, .links, .contact {
-        margin-bottom: 20px;
-    }
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
 }

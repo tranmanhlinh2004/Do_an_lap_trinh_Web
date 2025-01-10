@@ -187,166 +187,82 @@
     margin-top: 40px;
 }
 
-
-
-
-
-.news-list{
-  background-color: #f6f4f4;
+.sub{
+  font-weight: bold;
 }
-.news-header{
-  background-color: #8e91e5d4;
+.line{
+  width: 150px;
+  height: 2.3px;
+  background-color: #141313;
 }
 .news-title {
-  font-family: "Coiny";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-weight: bold;
 }
-.news-title h1 {
-  text-align: center;
+.news-text {
+  padding: 0 40px;
+  color: #8b8686;
+}
+.text-des{
+  font-weight: bold;
+  padding: 20px 40px;
+}
+
+.news img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 0.9em;
+}
+
+
+.list-group-item a {
+  font-size: 1em;
   font-weight: bold;
 }
 
-.news-intro, .news-link {
-  text-align: center;
-  margin: 10px 0;
+.list-group-item small {
+  font-size: 0.9em;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #5a4a42;
 }
 
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+footer h5 {
+  color: #5a4a42;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.news-item {
-  border: 2px solid #4e24d6;
-  border-radius: 20px;
-  padding: 10px;
-  box-sizing: content-box;
-  max-width: 400px; /* Giới hạn chiều rộng tối đa */
-  max-height: 29%;
-  margin-top: 20px;
-  margin-bottom: 50px;
+footer a {
+  color: #5a4a42;
+  text-decoration: none;
 }
 
-.news-item img {
-  width: 100%;
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  font-size: 24px;
+  color: #5a4a42;
+  margin-right: 10px;
+}
+
+.footer-icon:hover {
+  color: #8b4513;
+}
+
+.footer-logo img {
+  max-width: 100px;
   height: auto;
-}
-
-.news-item h4 {
-  margin-top: 15px;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.news-item .content {
-  margin-top: 10px;
-  color: #6c757d;
-  font-size: 0.9rem;
-}
-
-.news-item:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  transition: all 0.1s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Đáp ứng thiết bị di động */
-@media (max-width: 1024px) {
-  .news-item {
-      flex: 1 1 calc(50% - 40px); /* 2 ô trong một hàng */
-  }
-}
-
-
-
-
-.footer {
-    background-color: #252323;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.about p{
-    margin-top: 20px;
-    font-style: 'League Spartan';
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 300px;
-    color: #acabab;
-}
-
-.links h2, .contact h2 {
-    margin-bottom: 20px;
-}
-
-.links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links ul li {
-    margin-bottom: 10px;
-    
-}
-
-.links ul li a {
-    color: #b1aeae;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.links ul li a:hover {
-    
-    text-decoration: underline;
-}
-
-.contact .social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icon {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #979797;
-    font-size: 20px;
-    transition: 0.3s ease;
-}
-
-.social-icon:hover {
-    font-size: 30px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about, .links, .contact {
-        margin-bottom: 20px;
-    }
 }
 
 
