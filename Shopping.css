@@ -189,15 +189,15 @@
   background-color: #f8f9fa;
 }
 .promotion-banner {
-  background-color: #693d27; /* Màu nâu */
-  color: #ffffff; /* Màu trắng */
+  background-color: #693d27; 
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   padding: 10px 20px;
-  border-radius: 50px; /* Bo tròn */
+  border-radius: 50px; 
   display: inline-block;
-  border: 2px solid #8B4513; /* Đường viền nâu nhạt */
+  border: 2px solid #8B4513;
   width: 800px;
   margin: 20px auto;
 }
@@ -209,21 +209,21 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .custom-button {
-  border: 1px solid #8B4513; /* Viền màu nâu nhạt */
-  color: #8B4513; /* Chữ màu nâu */
+  border: 1px solid #8B4513; 
+  color: #8B4513; 
   font-size: 16px;
-  font-weight: 500; /* Chữ vừa đậm */
-  padding: 10px 20px; /* Khoảng cách trong nút */
-  border-radius: 10px; /* Bo góc nhẹ */
-  background-color: transparent; /* Nền trong suốt */
+  font-weight: 500; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  background-color: transparent;
   text-align: center;
-  text-decoration: none; /* Xóa gạch chân (dành cho thẻ <a>) */
+  text-decoration: none;
   display: inline-block;
 }
 
 .custom-button:hover {
-  background-color: #8B4513; /* Nền màu nâu khi hover */
-  color: #fff; /* Chữ trắng khi hover */
+  background-color: #8B4513; 
+  color: #fff; 
   transition: all 0.4s ease-in-out;
 }
 footer {
