@@ -1,0 +1,195 @@
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f8f9fa;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #ffc107;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  border-radius: 20px;
+  border: 1px solid #ffc107;
+}
+
+.btn-outline-light {
+  border-radius: 20px;
+  color: #ffc107;
+  border-color: #ffc107;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+.login .user-icon a {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.cart .cart-icon a {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.login .user-icon a:hover,
+  .cart .cart-icon a:hover {
+    cursor: pointer;
+    color: #ffc107;
+  }
+
+.dropdown-menu a {
+  color: white;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+.dropdown-menu {
+  display: none;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.dropdown-item:hover {
+  background-color: #495057;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.carousel-item img {
+    height: 700px;
+    object-fit:fill;
+}
+.slide {
+    margin: auto 80px;
+}
+  .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .banner-text {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-caption p {
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .gallery-img {
+    transition: transform 0.3s ease;
+    filter: brightness(0.7);
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.02);
+    filter: brightness(0.8);
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0;
+  }
+
+  .quote-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://caodangytetphcm.edu.vn/wp-content/uploads/2022/04/top-phong-kham-thu-y-q7.jpg")
+        center/cover;
+    height: 600px;
+  }
+
+  .social-icon {
+    transition: 0.3s ease;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #5a4a42;
+}
+
+footer h5 {
+    color: #5a4a42;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #5a4a42;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    font-size: 24px;
+    color: #5a4a42;
+    margin-right: 10px;
+}
+
+.footer-icon:hover {
+    color: #8b4513;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}

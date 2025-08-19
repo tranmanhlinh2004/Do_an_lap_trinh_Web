@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Coiny&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Introduce.css">
+    <title>Giới thiệu về Petshop</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Petshop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Introduce.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="Shopping.html"
+              id="shoppingDropdown"
+              role="button"
+              aria-expanded="false"
+            >
+              Mua sắm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Thức ăn & Dinh dưỡng</a></li>
+              <li><a class="dropdown-item" href="#">Phụ kiện & Đồ chơi</a></li>
+              <li><a class="dropdown-item" href="#">Vệ sinh & Chăm sóc</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="Pets.html"
+              id="petsDropdown"
+              role="button"
+              aria-expanded="false"
+            >
+              Thú cưng
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Chó</a></li>
+              <li><a class="dropdown-item" href="#">Mèo</a></li>
+              <li><a class="dropdown-item" href="#">Các loài thú nhỏ</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="News.html">Tin tức</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="login ms-3">
+          <div class="user-icon">
+              <a href="User.html"><i class="fa-regular fa-user"></i></a>
+          </div>
+      </div>
+      <div class="cart ms-3">
+          <div class="cart-icon">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+      </div>
+        
+        
+      </div>
+    </div>
+  </nav>
+<div id="petShopCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+          class="d-block w-100"
+          alt="Banner 1"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1579452113472-2f2a764188ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGV0JTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D"
+          class="d-block w-100"
+          alt="Banner 2"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGV0JTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D"
+          class="d-block w-100"
+          alt="Banner 3"
+        />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="container my-5">
+      <div class="row gy-5">
+        <div class="col-lg-6">
+          <h1 class="mb-4">
+            Petshop - Nơi chăm sóc thú cưng bằng cả trái tim!
+          </h1>
+          <p class="fs-5 mb-3">
+            Pet shop là một cửa hàng chuyên cung cấp các loại thú cưng và các
+            sản phẩm, dịch vụ liên quan đến chăm sóc thú cưng. Cửa hàng bày bán
+            đa dạng các loài vật nuôi như chó, mèo, và các nhỏ khác như chuột
+            hamster, thỏ.
+          </p>
+          <p class="fs-5 mb-3">
+            Bên cạnh đó, pet shop còn có dịch vụ chăm sóc thú cưng như cắt tỉa
+            lông, tắm rửa, huấn luyện và tư vấn sức khỏe. Cửa hàng có thể hợp
+            tác với các bác sĩ thú y để cung cấp dịch vụ khám bệnh và tiêm phòng
+            cho vật nuôi.
+          </p>
+          <p class="fs-5">
+            Pet shop không chỉ là nơi mua bán thú cưng, mà còn là nơi để các chủ
+            nuôi chia sẻ kinh nghiệm chăm sóc, nuôi dạy vật nuôi một cách tốt
+            nhất.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-secondary p-4 rounded">
+            <div class="row g-4">
+              <div class="col-6">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.JaDwW0DsnEFifDgmLJhGLAHaEK&pid=Api&P=0&h=220"
+                  class="img-fluid rounded gallery-img"
+                  alt="Mèo trên bàn"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.FB390NkO2NOLrlvQad9M-gHaE8&pid=Api&P=0&h=220"
+                  class="img-fluid rounded gallery-img"
+                  alt="Hai chú chó"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://tse3.mm.bing.net/th?id=OIP.30bMQzArIVUa6ruBWKePqQHaE7&pid=Api&P=0&h=220"
+                  class="img-fluid rounded gallery-img"
+                  alt="Chó nhỏ dễ thương"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://tse2.mm.bing.net/th?id=OIP.1JNhAJuZMlMtpP_t9PpNjQHaEK&pid=Api&P=0&h=220"
+                  class="img-fluid rounded gallery-img"
+                  alt="Mèo đáng yêu"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card border-0 bg-light h-100">
+                <div class="card-body p-4">
+                  <h2 class="card-title mb-4 text-primary">
+                    Sứ mệnh của chúng tôi
+                  </h2>
+                  <div class="card-text fs-5 lh-lg">
+                    <p>
+                      Sứ mệnh của Pet Shop là cung cấp những sản phẩm và dịch vụ
+                      chăm sóc thú cưng chất lượng cao, an toàn và hiệu quả,
+                      giúp bảo vệ sức khỏe và mang lại cuộc sống vui vẻ, hạnh
+                      phúc cho các thú cưng.
+                    </p>
+                    <p>
+                      Chúng tôi cam kết không chỉ cung cấp các sản phẩm dinh
+                      dưỡng và phụ kiện cho thú cưng mà còn đồng hành cùng chủ
+                      nuôi trong việc chăm sóc, huấn luyện và cải thiện chất
+                      lượng cuộc sống của thú cưng, thông qua đội ngũ nhân viên
+                      giàu kinh nghiệm và yêu thương động vật.
+                    </p>
+                    <p class="mb-0">
+                      Chúng tôi luôn đặt lợi ích và sự hài lòng của khách hàng
+                      lên hàng đầu, nhằm tạo ra một môi trường thân thiện và
+                      đáng tin cậy cho tất cả những ai yêu thương thú cưng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card border-0 bg-light h-100">
+                <div class="card-body p-4">
+                  <h2 class="card-title mb-4 text-success">
+                    Tầm nhìn của chúng tôi
+                  </h2>
+                  <div class="card-text fs-5 lh-lg">
+                    <p>
+                      Tầm nhìn của Pet Shop là trở thành thương hiệu hàng đầu
+                      trong lĩnh vực cung cấp sản phẩm và dịch vụ chăm sóc thú
+                      cưng tại Việt Nam, được đông đảo khách hàng tin tưởng và
+                      lựa chọn.
+                    </p>
+                    <p>
+                      Chúng tôi hướng đến việc xây dựng một cộng đồng yêu thương
+                      động vật, nơi mọi thú cưng đều nhận được sự chăm sóc tốt
+                      nhất và mọi chủ nuôi đều được hỗ trợ tận tình trong hành
+                      trình chăm sóc thú cưng của mình.
+                    </p>
+                    <p class="mb-0">
+                      Pet Shop không ngừng đổi mới, sáng tạo và phát triển, nhằm
+                      đáp ứng nhu cầu ngày càng cao của khách hàng và mang đến
+                      những trải nghiệm tuyệt vời cho cả chủ nuôi và thú cưng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-5 text-dark">
+          <h2 class="display-5 fw-bold ">
+            Pet Shop là lựa chọn tốt nhất cho bạn!
+          </h2>
+          <p class="fs-5">
+            Với đội ngũ nhân viên chuyên nghiệp và môi trường an toàn, pet shop
+            đảm bảo thú cưng của bạn được chăm sóc tận tình. Các dịch vụ như tắm
+            rửa và cắt tỉa lông giúp thú cưng luôn khỏe mạnh và vui vẻ.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div
+              class="service-icon rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-4"></i>
+            </div>
+            <button class="btn btn-outline-dark rounded-pill px-4">
+              Thú cưng, thức ăn và phụ kiện
+            </button>
+          </div>
+          <div class="col-md-4 text-center">
+            <div
+              class="service-icon rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+            >
+              <i class="fa-solid fa-clipboard fs-4"></i>
+            </div>
+            <button class="btn btn-outline-dark rounded-pill px-4">
+              Khám và chăm sóc sức khỏe
+            </button>
+          </div>
+          <div class="col-md-4 text-center">
+            <div
+              class="service-icon rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+            >
+              <i class="fa-solid fa-phone fs-4"></i>
+            </div>
+            <button class="btn btn-outline-dark rounded-pill px-4">
+              Giao tiếp và tư vấn
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="quote-section d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center text-white">
+            <p class="fs-4 fst-italic">
+              "Chúng tôi không chỉ chăm sóc thú cưng của bạn, mà còn quan tâm
+              đến niềm vui và hạnh phúc của cả bạn và người bạn bốn chân của
+              mình. Sự hài lòng của bạn là động lực để chúng tôi cống hiến hết
+              mình mỗi ngày."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3">
+                <h5>Về chúng tôi</h5>
+                  <p>
+                    <strong>Petshop.com</strong> tự hào là địa chỉ đáng tin cậy dành cho các bạn yêu thú cưng. Chúng tôi cung cấp đa dạng sản phẩm chất lượng cao, từ thức ăn, phụ kiện đến dịch vụ chăm sóc chuyên nghiệp. Với sứ mệnh mang lại hạnh phúc cho thú cưng và sự hài lòng cho khách hàng, <strong>Petshop</strong> cam kết luôn đồng hành cùng bạn trên hành trình chăm sóc người bạn nhỏ của mình.
+                  </p>
+              </div>
+              <div class="col-md-3">
+                  <h5>Thông tin cửa hàng</h5>
+                  <p>Địa chỉ: 182 Lê Duẩn, p. Bến Thủy, TP Vinh, Nghệ An</p>
+                  <p>SĐT: 0868.066.018</p>
+                  
+              </div>
+              <div class="col-md-3">
+                  <h5>Hỗ trợ khách hàng</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Tìm kiếm</a></li>
+                      <li><a href="#">Giới thiệu</a></li>
+                      <li><a href="#">Chính sách bảo mật</a></li>
+                      <li><a href="#">Chính sách thanh toán</a></li>
+                      <li><a href="#">Chính sách giao hàng</a></li>
+                      <li><a href="#">Chính sách đổi trả</a></li>
+                      <li><a href="#">Hướng dẫn mua hàng</a></li>
+                      <li><a href="#">Điều khoản dịch vụ</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>Chăm sóc khách hàng</h5>
+                  <p><i class="bi bi-telephone footer-icon"></i>0868.066.018</p>
+                  <p><i class="bi bi-envelope footer-icon"></i>tranmanhlinh204@gmail.com</p>
+                  <h5>Follow Us</h5>
+                  <a href="#" class="footer-icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-youtube"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+  </body>
+</html>
